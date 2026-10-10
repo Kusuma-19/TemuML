@@ -8,8 +8,8 @@ Machine-learning classification of **acetylcholinesterase (AChE) inhibitors** us
 
 | Step | Description |
 |---|---|
-| 1. Data | Cleaned ChEMBL AChE dataset, about 7,000 compounds, binary label in the `class` column **[TODO: target ID, activity type and cut-off used to define active/inactive, curation steps]** |
-| 2. Split | Scaffold split (`astartes`, 70/30, `random_state=0`) so that train and test contain different Murcko scaffolds |
+| 1. Data | Cleaned ChEMBL AChE dataset, about 8,782 compounds as initial data set then we curated to 6,948 compounds, binary label in the `class` column  |
+| 2. Split | Scaffold split (`astartes`, 70/30, `random_state=0`) so that train (4,864) and test (2,084) contain different Murcko scaffolds |
 | 3. Features | 12 PaDEL fingerprints computed separately for train and test |
 | 4. Base learners | One neural network per fingerprint (MLP or BiLSTM), trained with 5-fold scaffold-grouped, stratified cross-validation |
 | 5. Stacking | Out-of-fold (OOF) probabilities of the 12 base learners are combined by logistic regression and by a simple mean; test predictions are the average of the fold models |
