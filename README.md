@@ -57,14 +57,15 @@ pip install numpy pandas scikit-learn tensorflow joblib rdkit padelpy astartes
 
 ```bash
 # 1. Clean the data (produces temu_processed.csv)
-python scripts/preprocess_pipeline.py
+python scripts/processing-temu.py
 
 # 2. Scaffold split and fingerprints -> creates temu/train and temu/test
-python scripts/fingerprints.py
+python scripts/fp_preprocess.py
 
 # 3. Train, stack and evaluate
 #    Set MODEL_TYPE = "mlp" or "bilstm" at the top of the script first
-python scripts/train_mlp_stacking.py
+python scripts/train_MLP.py
+python scripts/train_BILSTM.py
 ```
 
 Outputs are written to `temu/results_<MODEL_TYPE>/`: OOF and test probabilities (`stacked_*.csv`), metrics (`metrics_train_oof.csv`, `metrics_test.csv`), applicability-domain tables, and saved models.
