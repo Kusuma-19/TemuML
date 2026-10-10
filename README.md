@@ -126,4 +126,3 @@ Code licence:
 
 ## Citation
 
-**[TODO: add your paper reference or "manuscript in preparation".]**
