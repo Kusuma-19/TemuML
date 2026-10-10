@@ -122,7 +122,7 @@ Results for the BiLSTM models: **[TODO: add after the run completes]**
 
 Bioactivity data were obtained from ChEMBL (CC BY-SA 3.0) **[TODO: ChEMBL version and download date]**. Please cite ChEMBL if you reuse the data.
 
-Code licence: **[TODO: choose a licence, e.g. MIT, and add a `LICENSE` file]**.
+Code licence: 
 
 ## Citation
 
