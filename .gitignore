@@ -1,0 +1,6 @@
+*.keras
+*.h5
+*.joblib
+__pycache__/
+temu/train/x??_train.csv
+temu/test/x??_test.csv
