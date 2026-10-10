@@ -2,7 +2,7 @@
 
 Machine-learning classification of **acetylcholinesterase (AChE) inhibitors** using 12 PaDEL fingerprints, deep-learning base learners (MLP, BiLSTM), scaffold-aware stacking and an applicability domain.
 
-> Items marked **[TODO]** need your own details before the repository is made public.
+> Items marked **[TODO]** need details before the repository puböished.
 
 ## Overview
 
